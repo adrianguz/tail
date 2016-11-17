@@ -48,7 +48,7 @@ func main() {
 			break
 		}
 
-		if stat.Size()-bufSize < incSize {
+		if stat.Size()-bufSize > incSize {
 			bufSize += incSize
 		} else {
 			bufSize = stat.Size()
